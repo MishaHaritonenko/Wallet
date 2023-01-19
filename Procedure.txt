@@ -1,0 +1,22 @@
+USE walletsdb;
+GO
+CREATE PROCEDURE Add_to_refill
+    @Amount REAL,
+    @Name TEXT,
+    @Id_valuta INTEGER,
+    
+AS
+INSERT INTO tab_wallets(amount, name, id_valuta) 
+VALUES(@Amoun, @Name, @Id_valutat)
+
+
+USE walletsdb;
+GO
+CREATE PROCEDURE Delete_from_refill
+    @Amount REAL,
+    @Name TEXT,
+    @Id_valuta INTEGER,
+    
+AS
+DELETE FROM tab_wallets(amount, name, id_valuta) 
+VALUES(@Amoun, @Name, @Id_valutat)
